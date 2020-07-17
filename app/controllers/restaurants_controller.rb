@@ -11,13 +11,17 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    @restaurant = Restaurant.create(restaurant_params)
-    json_response(@restaurant)
+    @restaurant = Restaurant.create!(restaurant_params)
+    json_response(@restaurant, :created)
   end
 
   def update
     @restaurant = Restaurant.find(params[:id])
-    @restaurant.update(restaurant_params)
+    if @restaurant.update!(restaurant_params)
+      render status: 200, json:{
+        message: 'This restaurant has been updated successfully'
+      }
+    end
   end
 
   def destroy
