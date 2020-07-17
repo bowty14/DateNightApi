@@ -1,5 +1,5 @@
 class Restaurant < ApplicationRecord
-  include PgSearch::Model 
+  # include PgSearch::Model 
 
   validates :name, presence: true
   validates :address, presence: true
@@ -11,11 +11,11 @@ class Restaurant < ApplicationRecord
   validates :website, presence: true
 
 
-  pg_search_scope :search_restaurants, against: [:name],
-  using: {
-    tsearch: {
-      any_word: true,
-      prefix: true
-    }
-  }
+  # pg_search_scope :search_restaurants, against: [:name],
+  # using: {
+  #   tsearch: {
+  #     any_word: true,
+  #     prefix: true
+  #   }
+  # }
 end
