@@ -12,5 +12,12 @@ describe 'get all restaurants route', :type => :request do
   it 'returns status code 200' do
     expect(response).to have_http_status(:success)
   end
+
+  it 'returns a random restaurant' do
+    get '/restaurants/random'
+    first = Restaurant.first.id
+    last = first + Restaurant.count
+    expect(response).to have_http_status(:success)
+  end
 end
 
