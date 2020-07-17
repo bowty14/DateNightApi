@@ -23,6 +23,19 @@ class RestaurantsController < ApplicationController
   def destroy
     @restaurant = Restaurant.find(params[:id])
     @restaurant.destroy
+    if @restaurant.destroy
+      render status: 200, json: {
+        message: 'This restaurant has been successfully deleted!'
+      }
+    end
+  end
+
+  def random
+    first = Restaurant.first.id
+    last = first + Restaurant.count
+    restaurant_id = rand(first...last)
+    @restaurant = Restaurant.find(restaurant_id)
+    json_response(@restaurant)
   end
 
 
