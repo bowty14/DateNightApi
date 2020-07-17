@@ -1,7 +1,7 @@
 class RestaurantsController < ApplicationController
 
   def index
-    @restaurants = Restaurants.all 
+    @restaurants = Restaurant.all 
     json_response(@restaurants)
   end
 

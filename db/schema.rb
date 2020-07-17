@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_17_161446) do
+ActiveRecord::Schema.define(version: 2020_07_17_173822) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 2020_07_17_161446) do
     t.string "menu"
     t.string "reservation"
     t.string "website"
+    t.string "type"
+    t.string "price"
   end
 
 end
