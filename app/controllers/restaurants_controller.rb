@@ -34,7 +34,7 @@ class RestaurantsController < ApplicationController
     end
   end
 
-  def rand
+  def random
     first = Restaurant.first.id
     last = first + Restaurant.count
     restaurant_id = rand(first...last)
@@ -49,6 +49,6 @@ class RestaurantsController < ApplicationController
   end
 
   def restaurant_params
-    params.permit(:name, :address, :number, :menu, :reservation, :website)
+    params.permit(:name, :address, :number, :menu, :reservation, :website, :category, :price)
   end
 end

@@ -45,7 +45,7 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'factory_bot_rails'
-  gem 'simplecov', require: false
+  gem 'simplecov', require: true
   gem 'vcr'
   gem 'webmock'
 end
