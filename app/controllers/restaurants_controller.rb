@@ -34,7 +34,7 @@ class RestaurantsController < ApplicationController
     end
   end
 
-  def rand
+  def random
     first = Restaurant.first.id
     last = first + Restaurant.count
     restaurant_id = rand(first...last)
