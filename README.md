@@ -17,7 +17,7 @@ This application is a tool for couples to help with the date night restaurant qu
 |1.get /restaurants| localhost:3000/restaurants| returns a list of all restaurants|
 |2. POST /restaurants| localhost:3000/restaurants|creates a new restaurant|
 |4. Update /restaurants| localhost:3000/restauraunt/restaurant_id| updates a restaurant by id number.|
-|5. Delete /restaurants| localhost:3000/restaurants| deletes a cat or dog by id number|
+|5. Delete /restaurants| localhost:3000/restaurants| deletes a restaurant by id number|
 
 
 
