@@ -6,4 +6,6 @@ restaurant_list = [
 restaurant_list.each do |name,address,number,menu,reservation,website,category,price|
   Restaurant.create( name: name, address: address, number: number, menu: menu, reservation: reservation, website: website, category: category, price: price)
 end
+
 p "Created #{Restaurant.count} restaurants."
+
