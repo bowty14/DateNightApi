@@ -4,5 +4,5 @@ restaurant_list = [
 
 
 restaurant_list.each do |name,address,number,menu,reservation,website, category,price|
-  Restaurant.create( restaurant_name: name, restaurant_address: address, restaurant_number: number, restaurant_menu: menu, restaurant_reservation: reservation, restaurant_website: website, restaurant_category: category, restaurant_price: price)
+  Restaurant.create( name: name, address: address, number: number, menu: menu, reservation: reservation, website: website, category: category, price: price)
 end
