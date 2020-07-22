@@ -40,7 +40,7 @@ This application is a tool for couples to help with the date night restaurant qu
 
 * _To view project in browser type in terminal, `rails s`._
 * _Navigate to localhost:3000_
-* 
+* You can make requests to this api by using this url `https://serene-earth-10579.herokuapp.com/`
 
 ## Known Bugs
 No known bugs at this time in production. However in testing I am unable to get a integration test for creating a review to pass.
